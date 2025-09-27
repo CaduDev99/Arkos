@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabeçalho</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header>
-    <div><img src="" alt=""></div>
-   </header> 
+
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <!-- substitua src pelo caminho do seu logo -->
+        <img src="assets/ARKOS-removebg-preview.png" alt="Logo ARKOS">
+        <h1>ARKOS <span>BR381</span></h1>
+      </div>
+
+      <div class="search-box" role="search" aria-label="Busca no site">
+        <form action="#" method="get" aria-label="Formulário de busca">
+          <input
+            class="search-input"
+            name="q"
+            type="search"
+            placeholder="Faça sua busca..."
+            aria-label="Campo de busca"
+          />
+          <button class="search-btn" type="submit" aria-label="Pesquisar">
+            <!-- Ícone de lupa (SVG) -->
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <path d="M21 21l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="social-icons" aria-hidden="false">
+        <!-- Se preferir, substitua por SVGs ou ícones reais -->
+        <a href="#" title="YouTube">▶</a>
+        <a href="#" title="Instagram">◎</a>
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="WhatsApp">✆</a>
+      </div>
+    </div>
+
+    <nav class="menu" role="navigation" aria-label="Menu principal">
+      <a href="#">CURSOS</a>
+      <a href="#">CONTEUDO ONLINE</a>
+      <a href="#">PALESTRAS</a>
+      <a href="#">FORUM</a>
+      <a href="#">CONTATO</a>
+    </nav>
+  </header>
+
 </body>
 </html>
